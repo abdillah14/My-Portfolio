@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import Link from 'next/Link'
+
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsFillPersonLinesFill} from 'react-icons/bs'
+import Link from 'next/link'
 
 
 
-function NavBar() {
+function Navbar() {
   const [Nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
   useEffect(() => {
@@ -104,4 +105,4 @@ function NavBar() {
   )
 }
 
-export default NavBar
+export default Navbar
