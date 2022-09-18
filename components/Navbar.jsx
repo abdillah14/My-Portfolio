@@ -1,13 +1,13 @@
 import Image from 'next/image'
-import Link from 'next/Link'
 import React, { useEffect, useState } from 'react'
+import Link from 'next/Link'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsFillPersonLinesFill} from 'react-icons/bs'
 
 
 
-function Navbar() {
+function NavBar() {
   const [Nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
   useEffect(() => {
@@ -73,7 +73,7 @@ function Navbar() {
             <Link href='/#About'>
              <li onClick={()=> setNav(false)} className='py-4 text-sm hover:border-b'> About</li>
             </Link>
-            <Link href='/#Skills'>
+            <Link href='/#Skill'>
              <li onClick={()=> setNav(false)} className='py-4 text-sm hover:border-b'> Skills</li>
             </Link>
             <Link href='/#Contact'>
@@ -104,4 +104,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default NavBar
