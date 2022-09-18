@@ -13,11 +13,11 @@ const About = () => {
             but I was not satisfied with how we learned to program, 
             so I decided to take time and learn it on my own. </p>
             <p className='py-2 text-[#3a3e59]'>I made a lot of mistakes along the way, but thanks to the community of programmers, 
-                I learned from them, and now, I think it's my time to give something in return, 
-                I'm on a mission to help you, motivate you,
+                I learned from them, and now, I think {`it's`} my time to give something in return, 
+                {`I'm `} on a mission to help you, motivate you,
                  and give some tips that can help you to advance in programming journey. 
                 As I know how hard it is to teach yourself programming reach out 
-                to me if you need help I'll be glad to help.
+                to me if you need help {`I'll `} be glad to help.
                  Get in touch with me on any of these platforms below.</p>
         </div>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:rotate-3 ease-in duration-300'>

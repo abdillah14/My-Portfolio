@@ -11,10 +11,10 @@ const Main = () => {
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
           <div>
             <p className='uppercase text-sm tracking-widest text-gray-600'>This is my own portfolio</p>
-            <h1 className='py-4 text-[#3a3e59]'>Hi, I'm <span className='text-[#516ce5]'>Abdillah Ally</span> </h1>
+            <h1 className='py-4 text-[#3a3e59]'>Hi, {`I'm `}<span className='text-[#516ce5]'>Abdillah Ally</span> </h1>
             <h1 className='py-2 text-[#3a3e59]'>A <ReactTypingEffect text={["Web Developer...", "Mobile Developer..."]} speed={200} typingDelay={1000} eraseDelay={1000} /> </h1>
             <p className='py-4 text-[#3a3e59] max-w-[70%] m-auto tracking-widest'>
-                I'm a web and mobile developer using React 
+            {`I'm `} a web and mobile developer using React 
                 for front-end & responsive web app
                 and react native for native mobile application...
             </p>
