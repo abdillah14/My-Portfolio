@@ -97,7 +97,7 @@ const Contact = () => {
             </div>
         </div>
         <div className='flex justify-center py-2 '>
-            <Link href='/' className=' '>
+            <Link href='/#Home' className=' '>
                 <HiOutlineChevronDoubleUp  className='text-[#3a3e59] animate-bounce '/>
             </Link>
         </div>

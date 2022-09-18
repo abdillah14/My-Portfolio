@@ -31,7 +31,7 @@ function NavBar() {
          <h1 className='text-3xl font-signature py-3 px-5'> Abdillah </h1>
          <div className='px-5'>
           <ul className='hidden md:flex'>
-            <Link href='/'>
+            <Link href='/#Home'>
              <li className='ml-10 text-sm uppercase  hover:scale-90 ease-in duration-300'> Home</li>
             </Link>
             <Link href='/#About'>
@@ -67,7 +67,7 @@ function NavBar() {
           </div>
           <div className='py-4 flex flex-col'>
           <ul className='uppercase'>
-            <Link href='/'>
+            <Link href='/#Home'>
              <li onClick={()=> setNav(false)} className='py-4 text-sm hover:border-b'> Home</li>
             </Link>
             <Link href='/#About'>
