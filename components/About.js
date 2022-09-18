@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import MeImg from '../public/assets/pic.jpg'
 
 const About = () => {
   return (
@@ -21,7 +22,7 @@ const About = () => {
                  Get in touch with me on any of these platforms below...</p>
         </div>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:rotate-3 ease-in duration-300'>
-            <Image className='rounded-xl' src='/../public/assets/pic.jpg'  alt='/' width='320' height='419' />
+            <Image className='rounded-xl' src={MeImg}  alt='/' width='320' height='419' />
         </div>
       </div>
     </div>

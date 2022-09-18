@@ -7,6 +7,7 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import { IoIosSend } from 'react-icons/io'
 import Toast from './Toast';
+import picImg from '../public/assets/progra.jpg'
 
 //service_egntg8g serviceId
 //template_2ktytz4 templteId
@@ -39,7 +40,7 @@ const Contact = () => {
             <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
                 <div className='lg:p-4 h-full'>
                     <div className='items-center justify-center'>
-                        <Image className='rounded-xl hover:scale-105  ease-in duration-300' src='/../public/assets/progra.jpg' alt='/' width='294' height='171' />
+                        <Image className='rounded-xl hover:scale-105  ease-in duration-300' src={picImg} alt='/' width='294' height='171' />
                     </div>
                     <div>
                         <h2 className='py-2'> Name Here</h2>
