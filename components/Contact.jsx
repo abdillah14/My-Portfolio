@@ -2,7 +2,7 @@ import emailjs from '@emailjs/browser';
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useRef } from 'react'
-import { AiOutlineInstagram, AiOutlineMail } from 'react-icons/ai'
+import { AiFillHeart, AiOutlineInstagram, AiOutlineMail } from 'react-icons/ai'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import { IoIosSend } from 'react-icons/io'
@@ -102,8 +102,8 @@ const Contact = () => {
             </Link>
         </div>
       </div>
-      <div className='py-2 flex items-center justify-center '>
-        <p className='text-[] '>&copy; Copyright 2022 | Developed By Abdillah.</p>
+      <div className='py-2 flex flex-row items-center justify-center '>
+        <p className='text-[#3a3e59] flex'>Made by  <AiFillHeart color='red' size={25} className='px-1' /> | Created By <span className='px-2 font-bold font-signature text-xl'>Abdillah</span>.</p>
     </div>
     </div>
   )
