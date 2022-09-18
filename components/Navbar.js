@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsFillPersonLinesFill} from 'react-icons/bs'
-import Link from 'next/link'
 
 
 
@@ -32,16 +32,16 @@ function Navbar() {
          <h1 className='text-3xl font-signature py-3 px-5'> Abdillah </h1>
          <div className='px-5'>
           <ul className='hidden md:flex'>
-            <Link href='/#Home'>
+            <Link href='/#Home' >
              <li className='ml-10 text-sm uppercase  hover:scale-90 ease-in duration-300'> Home</li>
             </Link>
-            <Link href='/#About'>
+            <Link href='/#About' >
              <li className='ml-10 text-sm uppercase hover:scale-90 ease-in duration-300 '> About</li>
             </Link>
-            <Link href='/#Skill'>
+            <Link href='/#Skill' >
              <li className='ml-10 text-sm uppercase hover:scale-90 ease-in duration-300 '> Skills</li>
             </Link>
-            <Link href='/#Contact'>
+            <Link href='/#Contact' >
              <li className='ml-10 text-sm uppercase hover:scale-90 ease-in duration-300'> Contact</li>
             </Link>
           </ul>
@@ -68,16 +68,16 @@ function Navbar() {
           </div>
           <div className='py-4 flex flex-col'>
           <ul className='uppercase'>
-            <Link href='/#Home'>
+            <Link href='/#Home' >
              <li onClick={()=> setNav(false)} className='py-4 text-sm hover:border-b'> Home</li>
             </Link>
-            <Link href='/#About'>
+            <Link href='/#About' >
              <li onClick={()=> setNav(false)} className='py-4 text-sm hover:border-b'> About</li>
             </Link>
-            <Link href='/#Skill'>
+            <Link href='/#Skill' >
              <li onClick={()=> setNav(false)} className='py-4 text-sm hover:border-b'> Skills</li>
             </Link>
-            <Link href='/#Contact'>
+            <Link href='/#Contact' >
              <li onClick={()=> setNav(false)} className='py-4 text-sm hover:border-b'> Contact</li>
             </Link>
           </ul>

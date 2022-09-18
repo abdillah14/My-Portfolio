@@ -18,7 +18,7 @@ const About = () => {
                  and give some tips that can help you to advance in programming journey. 
                 As I know how hard it is to teach yourself programming reach out 
                 to me if you need help {`I'll `} be glad to help.
-                 Get in touch with me on any of these platforms below.</p>
+                 Get in touch with me on any of these platforms below...</p>
         </div>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:rotate-3 ease-in duration-300'>
             <Image className='rounded-xl' src='/../public/assets/pic.jpg'  alt='/' width='320' height='419' />
