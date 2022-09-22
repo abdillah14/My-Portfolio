@@ -33,16 +33,16 @@ function Navbar() {
          <div className='px-5'>
           <ul className='hidden md:flex'>
             <Link href='/#Home' >
-             <li className='ml-10 text-sm uppercase  hover:scale-90 ease-in duration-300'> Home</li>
+             <li className='ml-10 text-sm uppercase  hover:scale-105 ease-out duration-300'> Home</li>
             </Link>
             <Link href='/#About' >
-             <li className='ml-10 text-sm uppercase hover:scale-90 ease-in duration-300 '> About</li>
+             <li className='ml-10 text-sm uppercase hover:scale-90 ease-out duration-300 '> About</li>
             </Link>
             <Link href='/#Skill' >
-             <li className='ml-10 text-sm uppercase hover:scale-90 ease-in duration-300 '> Skills</li>
+             <li className='ml-10 text-sm uppercase hover:scale-90 ease-out duration-300 '> Skills</li>
             </Link>
             <Link href='/#Contact' >
-             <li className='ml-10 text-sm uppercase hover:scale-90 ease-in duration-300'> Contact</li>
+             <li className='ml-10 text-sm uppercase hover:scale-90 ease-out duration-300 '> Contact</li>
             </Link>
           </ul>
          </div>

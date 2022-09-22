@@ -20,12 +20,12 @@ const Main = () => {
             </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4 '>
                 <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-               <Link href='https://www.linkedin.com/mwlite/in/njopeka-abdillah-ally-77128223b'>
+               <Link href='https://www.linkedin.com/mwlite/in/njopeka-abdillah-ally-77128223b' passHref>
                 <FaLinkedinIn />
                </Link>
               </div>
               <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <Link href='https://github.com/abdillah14'>
+                <Link href='https://github.com/abdillah14' passHref>
                  <FaGithub />
                 </Link>
               </div>

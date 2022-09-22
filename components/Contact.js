@@ -3,11 +3,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useRef } from 'react'
 import { AiFillHeart, AiOutlineInstagram, AiOutlineMail } from 'react-icons/ai'
-import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
+// import { GrLinkUp } from 'react-icons/gr'
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import { IoIosSend } from 'react-icons/io'
 import Toast from './Toast';
 import picImg from '../public/assets/progra.jpg'
+import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import { toast } from "react-toastify";
 
 //service_egntg8g serviceId
 //template_2ktytz4 templteId
@@ -15,6 +17,7 @@ import picImg from '../public/assets/progra.jpg'
 //1ZnTtys5LTKH81YONEphv privteKey
 
 const Contact = () => {
+  const ShowToast = () => toast('Message sent succefully!', { hideProgressBar: true, autoClose: 2000, type: 'success' })
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,8 +25,8 @@ const Contact = () => {
   
     emailjs.sendForm('service_egntg8g', 'template_2ktytz4', form.current, '9e7lEB8tLO0_SyhcU')
       .then((result) => {
-        result.text ? `${<Toast />}` : ''
-          alert(result.text)
+         ShowToast() 
+        //  alert(result.text)
       }, (error) => {
           console.log(error.text);
       });
@@ -35,7 +38,7 @@ const Contact = () => {
       <div className='max-w-[1240px] m-auto px-2 py-16 w-full  '>
          {/* <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact me</p>  */}
         
-        <div className='grid lg:grid-cols-5 gap-8 pt-4'>
+        <div className='grid lg:grid-cols-5 gap-8 pt-2'>
             {/* left */}
             <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
                 <div className='lg:p-4 h-full'>
@@ -51,17 +54,17 @@ const Contact = () => {
                     <p className='uppercase pt-8'>Connect with me</p>
                     <div className='flex items-center justify-around py-4'>           
                         <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                           <Link href='https://twitter.com/Abdillahally10'>
+                           <Link href='https://twitter.com/Abdillahally10' passHref>
                             <FaTwitter /> 
                             </Link> 
                         </div>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                           <Link href='https://github.com/abdillah14'>
+                           <Link href='https://github.com/abdillah14' passHref>
                               <FaGithub />
                            </Link> 
                         </div>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <Link href='https://www.instagram.com/__abdullahally/'>
+                            <Link href='https://www.instagram.com/__abdullahally/' passHref>
                                <AiOutlineInstagram />
                             </Link>
                             
@@ -77,20 +80,20 @@ const Contact = () => {
                 <form ref={form}>
                     <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                          <div className='flex flex-col'>
-                            <input className='border-2 rounded-2xl p-2 flex border-gray-300' type="text" placeholder=' your name...' name="name" id="name" />
+                            <input className='border-2 rounded-2xl p-2 flex border-gray-300' type="text" placeholder=' your name...' name="name" id="name" required />
                          </div>
                          <div className='flex flex-col'>
                             <input className='border-2 rounded-2xl p-2 flex border-gray-300' type="text" placeholder=' your phone number...' name="phone" id="phone" />
                          </div>
                     </div>
                     <div className='flex flex-col py-2'>
-                            <input className='border-2 rounded-2xl p-2 flex border-gray-300' type="email" placeholder=' your email...' name="email_id" id="email_id" />
+                            <input className='border-2 rounded-2xl p-2 flex border-gray-300' type="email" placeholder=' your email...' name="email_id" id="email_id" required />
                          </div>
                          <div className='flex flex-col py-2'>
-                            <input className='border-2 rounded-2xl p-2 flex border-gray-300' type="text" placeholder=' your Subject...' name="Subject" id="Subject" />
+                            <input className='border-2 rounded-2xl p-2 flex border-gray-300' type="text" placeholder=' your Subject...' name="Subject" id="Subject" required/>
                          </div>
                          <div className='flex flex-col py-2'>
-                            <textarea className='border-2 rounded-2xl p-2 flex border-gray-300' placeholder=' your message...' name="message" id="message" rows='4'></textarea>
+                            <textarea className='border-2 rounded-2xl p-2 flex border-gray-300' placeholder=' your message...' name="message" id="message" rows='4' required></textarea>
                          </div>
                          <button onClick={sendEmail} className='flex items-center justify-center  p-3 w-full hover:scale-95 ease-in duration-300 mt-4'> <p>send</p>  <IoIosSend /></button>
                 </form>
@@ -104,7 +107,7 @@ const Contact = () => {
         </div>
       </div>
       <div className='py-2 flex flex-row items-center justify-center '>
-        <p className='text-[#3a3e59] flex'>Made by  <AiFillHeart color='red' size={25} className='px-1' /> | Created By <span className='px-2 font-bold font-signature text-xl'>Abdillah</span>.</p>
+        <p className='text-[#3a3e59] flex'>Made with  <AiFillHeart color='red' size={25} className='px-1' /> | Created By <span className='px-2 font-bold font-signature text-xl'>Abdillah</span>.</p>
     </div>
     </div>
   )
