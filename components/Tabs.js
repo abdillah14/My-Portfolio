@@ -1,30 +1,12 @@
-import Image from 'next/image'
-import React from 'react'
-// import jsImg from '../public/assets/js.jpg'
-//import NodeJsImg from  '../public/assets/nodejs.png'
-//import reactImg from '../public/assets/react.png'
-//import expressImg from '../public/assets/express.png'
-//import nativeImg from '../public/assets/react-native.png'
-//import mongoImg from '../public/assets/mongodb.jpg'
-//import fireImg from '../public/assets/firebase.jpg'
-//import windImg from '../public/assets/tailwind.jpg'
-import { TbBrandJavascript, TbBrandReactNative } from 'react-icons/tb'
-import { FaNodeJs, FaReact } from 'react-icons/fa'
-import { SiExpress, SiFirebase, SiMongodb, SiNextdotjs, SiTailwindcss } from 'react-icons/si'
+import React from "react";
 import BackSkills from "./BackSkills";
 import FrontSkills from "./FrontSkills";
-import MobileSkills from './MobileSkills'
 
-
-const Skill = () => {
-   const [openTab, setOpenTab] = React.useState(1);
+const Tabs = () => {
+  const [openTab, setOpenTab] = React.useState(1);
   return (
-    <div id='Skill' className='w-full md:h-screen p-2'>
-    
-      <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-      <h2 style={{textAlign: 'center'}} className='py-2 text-2xl tracking-wider items-center justify-center !border-b'>What I Can Do</h2>
-      <p className='py-2 text-sm max-w-[70%] m-auto tracking-wider'> Those are Technologies that i use for development of various applications such as web and Mobile.</p>
-      <div className="flex flex-wrap py-5">
+    <>
+      <div className="flex flex-wrap">
         <div className="w-full">
           <ul
             className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
@@ -68,25 +50,6 @@ const Skill = () => {
                Back-End
               </a>
             </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                  "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                  (openTab === 3
-                    ? "text-white bg-[#3a3e59]"
-                    : "text-blueGray-600 bg-white")
-                }
-                onClick={e => {
-                  e.preventDefault();
-                  setOpenTab(3);
-                }}
-                data-toggle="tab"
-                href="#link3"
-                role="tablist"
-              >
-                Mobile
-              </a>
-            </li>
           </ul>
           <div className="relative flex flex-col min-w-0 break-words  w-full mb-6">
             <div className="px-4 py-5 flex-auto">
@@ -115,27 +78,13 @@ const Skill = () => {
                   </p> */}
                   <BackSkills />
                 </div>
-                <div className={openTab === 3 ? "block" : "hidden"} id="link2">
-                  {/* <p>
-                    Completely synergize resource taxing relationships via
-                    premier niche markets. Professionally cultivate one-to-one
-                    customer service with robust ideas.
-                    <br />
-                    <br />
-                    Dynamically innovate resource-leveling customer service for
-                    state of the art customer service.
-                  </p> */}
-                  <MobileSkills />
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>   
-      
       </div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default Skill
+export default Tabs;

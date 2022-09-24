@@ -6,9 +6,8 @@ import { AiFillHeart, AiOutlineInstagram, AiOutlineMail } from 'react-icons/ai'
 // import { GrLinkUp } from 'react-icons/gr'
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import { IoIosSend } from 'react-icons/io'
-import Toast from './Toast';
 import picImg from '../public/assets/progra.jpg'
-import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import { BsArrowUp } from 'react-icons/bs';
 import { toast } from "react-toastify";
 
 //service_egntg8g serviceId
@@ -55,17 +54,23 @@ const Contact = () => {
                     <div className='flex items-center justify-around py-4'>           
                         <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
                            <Link href='https://twitter.com/Abdillahally10' passHref>
-                            <FaTwitter /> 
+                            <a>
+                               <FaTwitter /> 
+                            </a>
                             </Link> 
                         </div>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
                            <Link href='https://github.com/abdillah14' passHref>
-                              <FaGithub />
+                              <a>
+                                  <FaGithub />
+                              </a>
                            </Link> 
                         </div>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <Link href='https://www.instagram.com/__abdullahally/' passHref>
-                               <AiOutlineInstagram />
+                               <a>
+                                  <AiOutlineInstagram />
+                               </a>
                             </Link>
                             
                         </div>
@@ -101,8 +106,10 @@ const Contact = () => {
             </div>
         </div>
         <div className='flex justify-center py-2 '>
-            <Link href='/#Home' className=' '>
-                <HiOutlineChevronDoubleUp  className='text-[#3a3e59] animate-bounce '/>
+            <Link href='/#Home' className=' ' passHref>
+              <a>
+                <BsArrowUp  className='text-[#3a3e59] animate-bounce '/>
+              </a>          
             </Link>
         </div>
       </div>

@@ -7,6 +7,7 @@ import Main from '../components/Main'
 import Navbar from '../components/Navbar'
 import Project from '../components/Project'
 import Skill from '../components/Skill'
+import Tabs from '../components/Tabs'
 
 
 
@@ -23,6 +24,7 @@ export default function Home() {
       <Skill />  
       <Project />
       <Contact /> 
+      
       
     </div>
   )

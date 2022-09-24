@@ -10,7 +10,7 @@ html{
 
 @layer base {
   body {
-    @apply bg-[#fafaee] text-[#3a3e59] tracking-wide
+    @apply bg-[#fcfcee] text-[#3a3e59] tracking-wide
   }
 html{
   font-family: 'Raleway', sans-serif;

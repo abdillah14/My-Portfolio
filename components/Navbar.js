@@ -32,16 +32,16 @@ function Navbar() {
          <h1 className='text-3xl font-signature py-3 px-5'> Abdillah </h1>
          <div className='px-5'>
           <ul className='hidden md:flex'>
-            <Link href='/#Home' >
-             <li className='ml-10 text-sm uppercase  hover:scale-105 ease-out duration-300'> Home</li>
+            <Link href='/#Home' passHref >
+             <li className='ml-10 text-sm uppercase  hover:scale-105 ease-out duration-300 '> Home</li>
             </Link>
-            <Link href='/#About' >
+            <Link href='/#About' passHref>
              <li className='ml-10 text-sm uppercase hover:scale-90 ease-out duration-300 '> About</li>
             </Link>
-            <Link href='/#Skill' >
+            <Link href='/#Skill' passHref>
              <li className='ml-10 text-sm uppercase hover:scale-90 ease-out duration-300 '> Skills</li>
             </Link>
-            <Link href='/#Contact' >
+            <Link href='/#Contact' passHref>
              <li className='ml-10 text-sm uppercase hover:scale-90 ease-out duration-300 '> Contact</li>
             </Link>
           </ul>
