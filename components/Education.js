@@ -2,7 +2,7 @@ import React from "react";
 
 const Education = () => {
   return (
-    <div id="Education" className="w-full h-screen max-w-[1240px] m-auto ">
+    <div id="Education" className="w-full md:h-screen p-2` max-w-[1240px] m-auto ">
       <h1 className="text-4xl text-center tracking-wider items-center justify-center p-5 m-auto ">
         Resume
       </h1>
