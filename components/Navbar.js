@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsFillPersonLinesFill} from 'react-icons/bs'
-
+import logo from "../public/assets/logo-new.png"
 
 
 function Navbar() {
@@ -26,23 +26,23 @@ function Navbar() {
     setNav(!Nav)
   }
   return (
-    <div style={{backgroundColor: '#fafaee'}} className={shadow ? 'fixed w-full h-15 shadow-xl z-[100]' : 'fixed w-full h-15  z-[100]'}>
+    <div style={{backgroundColor: '#1f1527'}} className={shadow ? 'fixed w-full h-15 shadow-xl z-[100]' : 'fixed w-full h-15  z-[100]'}>
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-         {/* <Image src="/../public/assets/logos.png" alt="/" width='125' height='80' /> */}
-         <h1 className='text-3xl font-signature py-3 px-5'> Abdillah </h1>
+         <Image src={logo} alt="/" width='135' height='100' className="w-52 h-auto" />
+         {/* <h1 className='text-3xl font-signature py-3 px-5'> Abdillah </h1> */}
          <div className='px-5'>
           <ul className='hidden md:flex'>
             <Link href='/#Home' passHref >
-             <li className='ml-10 text-sm uppercase  hover:scale-105 ease-out duration-300 '> Home</li>
+             <li className='ml-10 text-sm text-white uppercase  hover:scale-105 ease-out duration-300 p-3 py-2 rounded-md hover:bg-gray-700 transition '> Home</li>
             </Link>
             <Link href='/#About' passHref>
-             <li className='ml-10 text-sm uppercase hover:scale-90 ease-out duration-300 '> About</li>
+             <li className='ml-10 text-sm text-white uppercase hover:scale-90 ease-out duration-300 p-3 py-2 rounded-md hover:bg-gray-700 transition '> About</li>
             </Link>
             <Link href='/#Skill' passHref>
-             <li className='ml-10 text-sm uppercase hover:scale-90 ease-out duration-300 '> Skills</li>
+             <li className='ml-10 text-sm text-white uppercase hover:scale-90 ease-out duration-300 p-3 py-2 rounded-md hover:bg-gray-700 transition '> Skills</li>
             </Link>
             <Link href='/#Contact' passHref>
-             <li className='ml-10 text-sm uppercase hover:scale-90 ease-out duration-300 '> Contact</li>
+             <li className='ml-10 text-sm text-white uppercase hover:scale-90 ease-out duration-300 p-3 py-2 rounded-md hover:bg-gray-700 transition '> Contact</li>
             </Link>
           </ul>
          </div>
@@ -69,16 +69,16 @@ function Navbar() {
           <div className='py-4 flex flex-col'>
           <ul className='uppercase'>
             <Link href='/#Home' >
-             <li onClick={()=> setNav(false)} className='py-4 text-sm hover:border-b'> Home</li>
+             <li onClick={()=> setNav(false)} className='py-4 text-sm text-white hover:border-b'> Home</li>
             </Link>
             <Link href='/#About' >
-             <li onClick={()=> setNav(false)} className='py-4 text-sm hover:border-b'> About</li>
+             <li onClick={()=> setNav(false)} className='py-4 text-sm text-white hover:border-b'> About</li>
             </Link>
             <Link href='/#Skill' >
-             <li onClick={()=> setNav(false)} className='py-4 text-sm hover:border-b'> Skills</li>
+             <li onClick={()=> setNav(false)} className='py-4 text-sm text-white hover:border-b'> Skills</li>
             </Link>
             <Link href='/#Contact' >
-             <li onClick={()=> setNav(false)} className='py-4 text-sm hover:border-b'> Contact</li>
+             <li onClick={()=> setNav(false)} className='py-4 text-sm text-white hover:border-b'> Contact</li>
             </Link>
           </ul>
           <div className='pt-40'>
