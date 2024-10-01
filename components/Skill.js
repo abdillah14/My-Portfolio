@@ -28,16 +28,19 @@ const Skill = () => {
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <h2
           style={{ textAlign: "center" }}
-          className=" text-2xl tracking-wider items-center justify-center p-5"
+          className=" text-4xl tracking-wider items-center justify-center p-5 "
         >
-          What I Can Do
+          Skills
         </h2>
-        <p className=" text-2xl p-3 m-auto tracking-wider">
+        <div class="flex justify-center items-center">
+          <div class="w-16 h-1 bg-[#3a3e59]"></div>
+        </div>
+        {/* <p className=" text-2xl p-3 m-auto tracking-wider">
           {" "}
           Those are Technologies that i use for development of various
           applications such as web and Mobile.
-        </p>
-        <div className="flex flex-wrap ">
+        </p> */}
+        <div className="flex flex-wrap p-10">
           <div className="w-full">
             <ul
               className="flex mb-0 list-none flex-wrap p-2 pb-4 flex-row"
@@ -154,7 +157,9 @@ const Skill = () => {
             </div>
           </div>
         </div>
+        
       </div>
+      
     </div>
   );
 };

@@ -4,10 +4,11 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import ReactTypingEffect from "react-typing-effect";
 import Link from "next/link";
+// import bgImg from "../public/assets/bg-home.jpg";
 
 const Main = () => {
   return (
-    <div id="Home" className="w-full h-screen text-center">
+    <div id="Home" className="bg-[url('/../public/assets/bg-home.jpg')] bg-cover bg-center w-full h-screen text-center -mb-12">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-md tracking-widest text-gray-600">

@@ -30,4 +30,8 @@ html{
    button{
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-slate-800 text-white
    }
+
+   /* bg-custom {
+    @apply background-image: url('public/assets/bg-home.jpg');
+   } */
 }

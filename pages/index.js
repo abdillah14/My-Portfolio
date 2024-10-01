@@ -4,6 +4,8 @@ import Head from "next/head";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Main from "../components/Main";
+import Education from "../components/Education";
+
 import Navbar from "../components/Navbar";
 import Project from "../components/Project";
 import Skill from "../components/Skill";
@@ -19,6 +21,7 @@ export default function Home() {
       <Navbar />
       <Main />
       <About />
+      <Education />
       <Skill />
       <Project />
       <Contact />

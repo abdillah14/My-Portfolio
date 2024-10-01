@@ -45,13 +45,16 @@ const Contact = () => {
     form.current.reset();
   };
   return (
-    <div id="Contact" className="w-full lg:h-screen">
+    <div id="Contact" className="w-full lg:h-screen max-w-[1240px] m-auto p-10">
       <h2
         style={{ textAlign: "center" }}
-        className="py-5 text-2xl tracking-wider items-center justify-center border-b"
+        className="py-5 text-4xl tracking-wider items-center justify-center "
       >
         Get In Touch
       </h2>
+      <div class="flex justify-center items-center">
+        <div class="w-16 h-1 bg-[#3a3e59]"></div>
+      </div>
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full  ">
         {/* <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact me</p>  */}
 
@@ -69,7 +72,8 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className="py-2"> Name Here</h2>
+                <h2 className="py-2"> Abdillah Ally</h2>
+                <p>Software Engineer</p>
                 <p>Web | mobile developer</p>
                 <p className="py-4 text-[#3a3e59]">
                   I am available for freelance and full-time position. Contact
